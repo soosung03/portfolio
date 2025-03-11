@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles/p3.css">
+</head>
+<body>
+    <h1 class="main-title">Soo's Gallery</h1>
+    <div class="container">
+        <section class="gallery">
+            <h2>iPhone 12 Photography</h2>
+            <p class="section-description">Capturing moments, one shot at a time.</p>
+            <div class="image-grid">
+                <img src="images/IMG_2609.jpg" alt="Description 1">
+                <img src="images/IMG_4301.jpg" alt="Description 2">
+                <img src="images/IMG_3937.jpg" alt="Description 1">
+                <img src="images/IMG_2816.jpg" alt="Description 3">
+                <img src="images/IMG_6020.jpg" alt="Description 4">
+            </div>
+            </section>
+            </div>
+        <section class="carousel">
+            <h2>Night Cityscapes</h2>
+            <p class="section-description">Seattle, New York, Seoul</p>
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/sea.jpg" alt="Seattle">
+                </div>
+                <div class="slide">
+                    <img src="images/IMG_0208.jpg" alt="Brooklyn Bridge">
+                </div>
+                <div class="slide">
+                    <img src="images/63.jpg" alt="63 Building">
+                </div>
+                <div class="slide">
+                    <img src="images/gate.jpg" alt="World Peace Gate">
+                </div>
+                <div class="slide">
+                    <img src="images/le.jpg" alt="Long expodure">
+                </div>
+            </div>
+            <div class="navigation">
+                <label class="nav-btn" for="slide1"></label>
+                <label class="nav-btn" for="slide2"></label>
+                <label class="nav-btn" for="slide3"></label>
+                <label class="nav-btn" for="slide4"></label>
+                <label class="nav-btn" for="slide5"></label>
+            </div>
+        </section>
+    <section class="personal-best">
+        <h2>Personal Best</h2>
+        <div class="best-photo">
+            <img src="images/Best-of-the-best.jpg" alt="Han River">
+            <p class="description">
+            Waited 6 seconds to capture this beautiful sight of Seoul and its bridges with a perfect reflection on the river. 
+            </p>
+            <p>Captured on 08/26/2020</p>
+        </div>
+    </section>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I have a deep passion for photography, with a specialized focus on capturing stunning nightscapes.</p>
+        <p>Through the use of long-exposure techniques, I aim to reveal the intricate beauty of the night,</p>
+        <p>transforming cityscapes and starry skies into captivating visual narratives.</p>
+    </section>
+    <section class="services">
+        <h2>Services</h2>
+        <p>No events are available at the moment. Please check again later.</p>
+    </section>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="results.html" method="get">
+            <fieldset>
+                <legend>Your Information</legend>
+                <ul>
+                    <li><label for="form-name">Name:</label> 
+                        <input type="text" name="customername" id="form-name" required></li>
+                    <li><label for="form-tel">Telephone Number:</label> 
+                        <input type="tel" name="telephone" id="form-tel" required></li>
+                    <li><label for="form-email">Email:</label> 
+                        <input type="email" name="email" id="form-email" required></li>
+                    <li><textarea name="message" rows="4" cols="60" maxlength="400" 
+                                id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+                </ul>
+            </fieldset>
+        </form>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </section>
+        <footer>
+            <p>&copy; 2025 Nature & Hiking | All Rights Reserved | images are created by Copilot</p>
+        </footer>
+</body>
+</html>
