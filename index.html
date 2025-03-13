@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styles/p3.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">SOO</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
     <h1 class="main-title">Soo's Gallery</h1>
     <div class="container">
         <section class="gallery">
@@ -95,7 +104,24 @@
             <input type="reset">
         </section>
         <footer>
-            <p>&copy; 2025 Nature & Hiking | All Rights Reserved | images are created by Copilot</p>
+            <p>
+                &copy; 2025 Soo's Gallery | All Rights Reserved | All Images are copyrighted by soo
+            </p>
         </footer>
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+
 </body>
 </html>

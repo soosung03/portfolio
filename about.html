@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Nature & Hiking</title>
+    <link rel="stylesheet" href="styles/aboutme-style.css">
+</head>
+<body>
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">SOO</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- About Me Content -->
+    <div class="about-container">
+        <div class="about-header">
+            <h1>About Me</h1>
+        </div>
+        
+        <div class="about-content">
+            <div class="profile-image">
+                <img src="images/Screenshot (58).png" alt="Jane Doe - Hiking Expert" class="profile-img">
+            </div>
+            
+            <div class="bio">
+                <h2>Soosung Yang</h2>
+                <p>
+                    Hello! I'm Soosung Yang, a passionate front-end web developer and an avid photographer who finds inspiration both in code and in the cities. 
+                    My love for photography started with a long trip to Korea, and it evolved into a lifelong passion.
+                    Capturing the bauty of the night cities fuels my creativity, whether I'm desiging websites or planning my next photography shoot. 
+                </p>
+                
+                <p>
+                    As a Computer Science student at University of Oregon, I specialize in creating responsive and engaging digital experiences. 
+                    From crafting sleek portfolio websites to developing interactive web applications, I enjoy merging technology with creativity. 
+                    My skills in HTML, CSS, and JavaScript allow me to build intuitive interfaces that enhance user engagement.
+                </p>
+                
+                <p>
+                    My goal is to inspire others to embrace both technology and the cities. 
+                    Whether you're looking for web development insights or recommendations on night time walking experience, I’d love to connect! 
+                    Let's create, explore, and make every step—both online and city adventure worth taking.
+                </p>
+                
+                <a href="resume.html" class="resume-btn">View My Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Soo's Gallery | All Rights Reserved | All Images are copyrighted by soo</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
